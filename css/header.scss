@@ -1,0 +1,57 @@
+
+.header-top-bar {
+    //height: 40px;
+    font-size: 12px;
+    line-height: 20px;
+    border-bottom: 1px solid #e9eaec;
+    padding: 10px 0 8px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    @include ubuntu();
+    color: #000;
+    
+    a {     
+        color: #000;         
+        text-decoration: none;
+        margin-right: 18px;
+        &:hover {
+            color: lightseagreen;
+        }
+    }
+}
+
+
+.header-section {
+    margin: 0 auto;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-stores, .header-city, .header-info-section{
+    display: flex;
+}
+
+.location-icon {
+    width: 20px;
+    height: 20px;        
+}
+
+.header-city, .header-phone{
+    font-weight: 500;
+}
+
+.header-display-on {
+    display: inherit;
+}
+
+.header-display-off {
+    display: none;
+}
+
+.header-social-icon {
+    width: 20px;
+    height: 20px;     
+}
