@@ -1,5 +1,13 @@
+//resolutions
+$tablets: 768px;
+$phones: 480px;
+
 @import "css/normalize.scss";
+
+@import "css/media.scss";;
 
 @import "css/fonts.scss";
 @import "css/layout.scss";
 @import "css/header.scss";
+@import "css/region.scss";
+@import "css/quest-menu.scss";

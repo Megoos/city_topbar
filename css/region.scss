@@ -1,0 +1,107 @@
+
+.topbar-regions {
+    background: #eee;
+    box-shadow: inset 0 -10px 10px rgba(0,0,0,.1);
+    display: none;
+}
+
+
+.regions-section {
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 1024px;  
+
+    @include tablets {
+        padding: 20px;
+    }
+
+}
+
+.regions-section__title {
+    display: block;
+    @include ubuntu(medium);
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 30px;
+
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        font-size: 20px;
+    }
+}
+
+.regions-section__city {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;    
+}
+
+.regions-section__item {    
+    margin-bottom: 24px;
+    min-width: 175px;
+
+    @include phones {
+        margin-bottom: 20px;
+    }
+}   
+
+.regions-section__link {
+    @include ubuntu();
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+     &:before {
+        display: inline-block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px #333 solid;
+        background-color: transparent; 
+        margin-right: 12px;        
+    }
+
+    &:hover {
+        &:before {
+            background-color: $hoverColor;
+        }
+    }   
+}
+
+.close {
+position: absolute;
+right: 4%;
+top: 6%;
+width: 25px;
+height: 25px;
+opacity: 1;
+transition: .3s;
+    @include tablets {
+        top: 2%;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.close:before, .close:after {
+position: absolute;
+left: 11px;
+content: '';
+height: 26px;
+width: 4px;
+background-color: #333;
+border-radius: 3px;
+}
+.close:before {
+transform: rotate(45deg);
+}
+.close:after {
+transform: rotate(-45deg);
+}
